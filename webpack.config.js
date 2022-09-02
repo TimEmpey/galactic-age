@@ -18,9 +18,26 @@ module.exports = {
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       title: 'galactic-age',
+      filename: 'index.html',
       template: './src/index.html',
       inject: 'body'
-    })
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'mercury.html',
+      template: './src/html/mercury.html'
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'venus.html',
+      template: './src/html/venus.html'
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'mars.html',
+      template: './src/html/mars.html'
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'jupiter.html',
+      template: './src/html/jupiter.html'
+    }),
   ],
   module: {
     rules: [

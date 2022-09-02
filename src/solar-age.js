@@ -105,6 +105,18 @@ export default class AgeInput {
   }
 
   jupiterYears() {
-
+    let jupiterSpan = this.jupiter;
+/* istanbul ignore else */
+    if (jupiterSpan < 1067) {
+      let yearsTillJup = 0
+      yearsTillJup = Math.round(1067 - jupiterSpan);
+      this.jupYears = yearsTillJup;
+      return yearsTillJup;
+    } else {
+      let yearsPastJup = 0
+      yearsPastJup = Math.round(jupiterSpan - 1067);
+      this.jupYears = yearsPastJup;
+      return yearsPastJup;
+    }
   }
 }

@@ -11,4 +11,9 @@ describe('AgeInput', () => {
     let input = new AgeInput(25);
     expect(input.findMercuryAge()).toEqual(6)
   });
+
+  test('should take age and compute Mercury age', () => {
+    let input = new AgeInput(25);
+    expect(input.findVenusAge()).toEqual(16)
+  });
 });

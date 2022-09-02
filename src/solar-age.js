@@ -1,7 +1,8 @@
 export default class AgeInput {
-  constructor(age, mercAge) {
+  constructor(age, merAge, venAge) {
     this.age = age;
-    this.mercury = mercAge
+    this.mercury = merAge;
+    this.venus = venAge;
   }
 
   findMercuryAge() {
@@ -9,5 +10,9 @@ export default class AgeInput {
     mercuryAge = (this.age * .24);
     this.mercury = mercuryAge;
     return mercuryAge;
+  }
+
+  findVenusAge() {
+
   }
 }

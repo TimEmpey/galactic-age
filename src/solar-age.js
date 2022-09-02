@@ -88,6 +88,18 @@ export default class AgeInput {
   }
 
   marsYears() {
-
+    let marsSpan = this.mars;
+/* istanbul ignore else */
+    if (marsSpan < 169) {
+      let yearsTillMar = 0
+      yearsTillMar = Math.round(169 - marsSpan);
+      this.marYears = yearsTillMar;
+      return yearsTillMar;
+    } else {
+      let yearsPastMar = 0
+      yearsPastMar = Math.round(marsSpan - 169);
+      this.marYears = yearsPastMar;
+      return yearsPastMar;
+    }
   }
 }

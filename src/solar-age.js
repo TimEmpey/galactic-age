@@ -44,6 +44,9 @@ export default class AgeInput {
   }
 
   findJupiterAge() {
-
+    let jupiterAge = 0;
+    jupiterAge = Math.round(this.age * 11.86);
+    this.jupiter = jupiterAge;
+    return jupiterAge;
   }
 }

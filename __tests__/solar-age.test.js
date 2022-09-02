@@ -41,4 +41,9 @@ describe('AgeInput', () => {
     let input = new AgeInput(25, 6, 16);
     expect(input.venusYears()).toEqual(40);
   });
+
+  test('should say how many years until user is 169 or how many years past 169 on Mars', () => {
+    let input = new AgeInput(25, 6, 16, 47);
+    expect(input.marsYears()).toEqual(122);
+  });
 });

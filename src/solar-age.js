@@ -42,14 +42,13 @@ export default class AgeInput {
 
   earthYears() {
     let ageSpan = this.age;
-/* istanbul ignore else */
     if (ageSpan < 90) {
-      let yearsTill = 0
+      let yearsTill = 0;
       yearsTill = Math.round(90 - ageSpan);
       this.years = yearsTill;
       return yearsTill;
     } else {
-      let yearsPast = 0
+      let yearsPast = 0;
       yearsPast = Math.round(ageSpan - 90);
       this.years = yearsPast;
       return yearsPast;
@@ -58,14 +57,13 @@ export default class AgeInput {
 
   mercuryYears() {
     let mercurySpan = this.mercury;
-/* istanbul ignore else */
     if (mercurySpan < 22) {
-      let yearsTillMer = 0
+      let yearsTillMer = 0;
       yearsTillMer = Math.round(22 - mercurySpan);
       this.merYears = yearsTillMer;
       return yearsTillMer;
     } else {
-      let yearsPastMer = 0
+      let yearsPastMer = 0;
       yearsPastMer = Math.round(mercurySpan - 22);
       this.merYears = yearsPastMer;
       return yearsPastMer;
@@ -74,14 +72,13 @@ export default class AgeInput {
 
   venusYears() {
     let venusSpan = this.venus;
-/* istanbul ignore else */
     if (venusSpan < 56) {
-      let yearsTillVen = 0
+      let yearsTillVen = 0;
       yearsTillVen = Math.round(56 - venusSpan);
       this.venYears = yearsTillVen;
       return yearsTillVen;
     } else {
-      let yearsPastVen = 0
+      let yearsPastVen = 0;
       yearsPastVen = Math.round(venusSpan - 56);
       this.venYears = yearsPastVen;
       return yearsPastVen;
@@ -90,14 +87,13 @@ export default class AgeInput {
 
   marsYears() {
     let marsSpan = this.mars;
-/* istanbul ignore else */
     if (marsSpan < 169) {
-      let yearsTillMar = 0
+      let yearsTillMar = 0;
       yearsTillMar = Math.round(169 - marsSpan);
       this.marYears = yearsTillMar;
       return yearsTillMar;
     } else {
-      let yearsPastMar = 0
+      let yearsPastMar = 0;
       yearsPastMar = Math.round(marsSpan - 169);
       this.marYears = yearsPastMar;
       return yearsPastMar;
@@ -106,14 +102,13 @@ export default class AgeInput {
 
   jupiterYears() {
     let jupiterSpan = this.jupiter;
-/* istanbul ignore else */
     if (jupiterSpan < 1067) {
-      let yearsTillJup = 0
+      let yearsTillJup = 0;
       yearsTillJup = Math.round(1067 - jupiterSpan);
       this.jupYears = yearsTillJup;
       return yearsTillJup;
     } else {
-      let yearsPastJup = 0
+      let yearsPastJup = 0;
       yearsPastJup = Math.round(jupiterSpan - 1067);
       this.jupYears = yearsPastJup;
       return yearsPastJup;

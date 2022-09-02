@@ -13,6 +13,9 @@ export default class AgeInput {
   }
 
   findVenusAge() {
-
+    let venusAge = 0;
+    venusAge = Math.round(this.age * .62);
+    this.venus = venusAge;
+    return venusAge;
   }
 }

@@ -32,6 +32,11 @@ describe('AgeInput', () => {
     expect(input.earthYears()).toEqual(65);
   });
 
+  test('should say how many years until user is 90 or how many years past 90 on Earth', () => {
+    let input = new AgeInput(100);
+    expect(input.earthYears()).toEqual(10);
+  });
+
   test('should say how many years until user is 22 or how many years past 22 on Mercury', () => {
     let input = new AgeInput(25, 6);
     expect(input.mercuryYears()).toEqual(16);

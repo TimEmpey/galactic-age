@@ -8,7 +8,7 @@ export default class AgeInput {
 
   findMercuryAge() {
     let mercuryAge = 0;
-    mercuryAge = (this.age * .24);
+    mercuryAge = Math.round(this.age * .24);
     this.mercury = mercuryAge;
     return mercuryAge;
   }
@@ -21,6 +21,9 @@ export default class AgeInput {
   }
 
   findJupiterAge() {
-
+    let jupiterAge = 0;
+    jupiterAge = Math.round(this.age * 1.88);
+    this.jupiter = jupiterAge;
+    return jupiterAge;
   }
 }

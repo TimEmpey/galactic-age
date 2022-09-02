@@ -55,16 +55,33 @@ export default class AgeInput {
 
   mercuryYears() {
     let mercurySpan = this.mercury;
-      if (mercurySpan < 22) {
-        let yearsTillMer = 0
-        yearsTillMer = Math.round(22 - mercurySpan);
-        this.merYears = yearsTillMer;
-        return yearsTillMer;
-      } else {
-        let yearsPastMer = 0
-        yearsPastMer = Math.round(mercurySpan - 22);
-        this.merYears = yearsPastMer;
-        return yearsPastMer;
-      }
+/* istanbul ignore else */
+    if (mercurySpan < 22) {
+      let yearsTillMer = 0
+      yearsTillMer = Math.round(22 - mercurySpan);
+      this.merYears = yearsTillMer;
+      return yearsTillMer;
+    } else {
+      let yearsPastMer = 0
+      yearsPastMer = Math.round(mercurySpan - 22);
+      this.merYears = yearsPastMer;
+      return yearsPastMer;
+    }
+  }
+
+  venusYears() {
+    let venusSpan = this.venus;
+/* istanbul ignore else */
+    if (venusSpan < 56) {
+      let yearsTillVen = 0
+      yearsTillVen = Math.round(56 - venusSpan);
+      this.venYears = yearsTillVen;
+      return yearsTillVen;
+    } else {
+      let yearsPastVen = 0
+      yearsPastVen = Math.round(venusSpan - 56);
+      this.venYears = yearsPastVen;
+      return yearsPastVen;
+    }
   }
 }

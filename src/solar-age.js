@@ -3,4 +3,7 @@ export default class AgeInput {
     this.age = age;
   }
 
+  mercuryAge() {
+
+  }
 }

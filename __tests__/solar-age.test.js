@@ -71,4 +71,9 @@ describe('AgeInput', () => {
     let input = new AgeInput(25, 6, 16, 47, 297);
     expect(input.jupiterYears()).toEqual(770);
   });
+
+  test('should say how many years until user is 1067 or how many years past 1067 on Jupiter', () => {
+    let input = new AgeInput(25, 6, 16, 47, 1100);
+    expect(input.jupiterYears()).toEqual(33);
+  });
 });

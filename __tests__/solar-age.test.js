@@ -32,4 +32,8 @@ describe('AgeInput', () => {
     expect(input.earthYears()).toEqual(65);
   });
 
+  test('should say how many years until user is 22 or how many years past 22 on Mercury', () => {
+    let input = new AgeInput(25);
+    expect(input.mercuryYears()).toEqual(16);
+  });
 });

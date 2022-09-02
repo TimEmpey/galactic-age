@@ -1,9 +1,13 @@
 export default class AgeInput {
-  constructor(age) {
+  constructor(age, mercAge) {
     this.age = age;
+    this.mercury = mercAge
   }
 
-  mercuryAge() {
-
+  findMercuryAge() {
+    let mercuryAge = 0;
+    mercuryAge = (this.age * .24);
+    this.mercury = mercuryAge;
+    return mercuryAge;
   }
 }

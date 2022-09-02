@@ -9,6 +9,6 @@ describe('AgeInput', () => {
 
   test('should take age and compute Mercury age', () => {
     let input = new AgeInput(25);
-    expect(input.mercuryAge).toEqual(6)
+    expect(input.findMercuryAge()).toEqual(6)
   });
 });

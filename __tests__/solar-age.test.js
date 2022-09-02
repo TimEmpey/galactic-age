@@ -47,10 +47,14 @@ describe('AgeInput', () => {
     expect(input.mercuryYears()).toEqual(3);
   });
 
-
   test('should say how many years until user is 56 or how many years past 56 on Venus', () => {
     let input = new AgeInput(25, 6, 16);
     expect(input.venusYears()).toEqual(40);
+  });
+
+  test('should say how many years until user is 56 or how many years past 56 on Venus', () => {
+    let input = new AgeInput(25, 6, 66);
+    expect(input.venusYears()).toEqual(4);
   });
 
   test('should say how many years until user is 169 or how many years past 169 on Mars', () => {

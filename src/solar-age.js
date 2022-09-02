@@ -7,8 +7,18 @@ export default class AgeInput {
     this.years = earthYears;
   }
 
-  years() {
-    
+  earthYears() {
+    let ageInput = this.age;
+/* istanbul ignore else */
+    if (ageInput < 90) {
+      let yearsTill = 0
+      yearsTill = Math.round(90 - ageInput);
+      return yearsTill;
+    } else {
+      let yearsPast = 0
+      yearsPast = Math.round(ageInput - 90);
+      return yearsPast;
+    }
   }
 
   findMercuryAge() {

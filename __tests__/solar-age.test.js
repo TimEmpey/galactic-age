@@ -12,8 +12,13 @@ describe('AgeInput', () => {
     expect(input.findMercuryAge()).toEqual(6)
   });
 
-  test('should take age and compute Mercury age', () => {
+  test('should take age and compute Venus age', () => {
     let input = new AgeInput(25);
     expect(input.findVenusAge()).toEqual(16)
+  });
+
+  test('should take age and compute Jupiter age', () => {
+    let input = new AgeInput(25);
+    expect(input.findJupiterAge()).toEqual(47)
   });
 });

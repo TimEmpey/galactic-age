@@ -1,8 +1,9 @@
 export default class AgeInput {
-  constructor(age, merAge, venAge) {
+  constructor(age, merAge, venAge, jupAge) {
     this.age = age;
     this.mercury = merAge;
     this.venus = venAge;
+    this.jupiter = jupAge;
   }
 
   findMercuryAge() {
@@ -17,5 +18,9 @@ export default class AgeInput {
     venusAge = Math.round(this.age * .62);
     this.venus = venusAge;
     return venusAge;
+  }
+
+  findJupiterAge() {
+
   }
 }

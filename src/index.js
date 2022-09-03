@@ -95,9 +95,7 @@ function handleForm4 (e) {
   let outputPastJup = ageInput4.jupPast;
   let resultsJupiterPast = document.getElementById("jupiter-past-year");
   resultsJupiterPast.innerText = outputPastJup;
-  console.log("hello")
   if(outputTillJup !== undefined) {
-    console.log("hello again")
     document.getElementById("jupiter-till").removeAttribute("class");
     document.getElementById("jupiter-age").removeAttribute("class");
   } else if (outputPastJup !== undefined) {

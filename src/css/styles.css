@@ -1,3 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
+
 .hidden {
   display: none;
 }
+
+.column-left {
+  align-content: center;
+  margin-left: 250px;
+  margin-right: 50px;
+  margin-bottom: 50px;
+}
+
+.column-right {
+  align-content: center;
+  margin-left: 10px;
+}
+
+body {
+  background-image: url("https://media.wired.com/photos/61dde9edf355cd4b7989ff3a/master/pass/Science_AUmicroscopii_eso1538c.jpg");
+}
+
+h1 {
+  text-align: center;
+  color: green;
+  font-size: 80px;
+  font-family: 'Syne Mono', monospace;
+}
+
+h2 {
+  text-align: center;
+  color: green;
+  margin-bottom: 100px;
+  font-size: 60px;
+  font-family: 'Syne Mono', monospace;
+}
+
+img {
+  height: 700px;
+  width: 700px;
+  border: solid green;
+  border-radius: 360px;
+  border-width: 10px;
+} 

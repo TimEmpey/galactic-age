@@ -8,10 +8,10 @@
   <h2>Mercury</h2>
   <form id="mercury">
     <label for="mercury-age-input">Enter Your Earth Age:</label>
-    <input type="number" id="mercury-age-input" name="mercury-age-input" min="0" max="123">
+    <input type="number" id="mercury-age-input" name="mercury-age-input" min="1" max="123">
     <button type="submit">Calculate</button>
   </form>
-  <p>You are <span id="mercury-age-output"></span> years old on Mercury</p>
+  <p class="hidden" id="mercury-age">You are <span id="mercury-age-output"></span> years old on Mercury</p>
   <p class="hidden" id="mercury-till">You are <span id="mercury-till-year"></span> years away from solar decomposition</p>
   <p class="hidden" id="mercury-past">You are <span id="mercury-past-year"></span> years past predicted solar decomposition, the Planetary Regiment will contacted</p>
   <a href="./index.html">

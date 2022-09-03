@@ -22,8 +22,10 @@ function handleForm1 (e) {
   resultsMerPast.innerText = outputPastMer;
   if(outputTillMer !== undefined) {
     document.getElementById("mercury-till").removeAttribute("class");
+    document.getElementById("mercury-age").removeAttribute("class");
   } else if (outputPastMer !== undefined) {
     document.getElementById("mercury-past").removeAttribute("class");
+    document.getElementById("mercury-age").removeAttribute("class");
   }
 }
 function handleForm2 (e) {
@@ -45,8 +47,10 @@ function handleForm2 (e) {
   resultsVenPast.innerText = outputPastVen;
   if(outputTillVen !== undefined) {
     document.getElementById("venus-till").removeAttribute("class");
+    document.getElementById("venus-age").removeAttribute("class");
   } else if (outputPastVen !== undefined) {
     document.getElementById("venus-past").removeAttribute("class");
+    document.getElementById("venus-age").removeAttribute("class");
   }
 }
 function handleForm3 (e) {
@@ -68,8 +72,10 @@ function handleForm3 (e) {
   resultsMarPast.innerText = outputPastMar;
   if(outputTillMar !== undefined) {
     document.getElementById("mars-till").removeAttribute("class");
+    document.getElementById("mars-age").removeAttribute("class");
   } else if (outputPastMar !== undefined) {
     document.getElementById("mars-past").removeAttribute("class");
+    document.getElementById("mars-age").removeAttribute("class");
   }
 }
 function handleForm4 (e) {
@@ -93,8 +99,10 @@ function handleForm4 (e) {
   if(outputTillJup !== undefined) {
     console.log("hello again")
     document.getElementById("jupiter-till").removeAttribute("class");
+    document.getElementById("jupiter-age").removeAttribute("class");
   } else if (outputPastJup !== undefined) {
     document.getElementById("jupiter-past").removeAttribute("class");
+    document.getElementById("jupiter-age").removeAttribute("class");
   }
 }
 

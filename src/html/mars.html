@@ -8,10 +8,10 @@
   <h2>Mars</h2>
   <form id="mars">
     <label for="mars-age-input">Enter Your Earth Age:</label>
-    <input type="number" id="mars-age-input" name="mars-age-input" min="0" max="123">
+    <input type="number" id="mars-age-input" name="mars-age-input" min="1" max="123">
     <button type="submit">Calculate</button>
   </form>
-  <p>You are <span id="mars-age-output"></span> years old on Mars</p>
+  <p class="hidden" id="mars-age">You are <span id="mars-age-output"></span> years old on Mars</p>
   <p class="hidden" id="mars-till">You are <span id="mars-till-year"></span> years away from solar decomposition</p>
   <p class="hidden" id="mars-past">You are <span id="mars-past-year"></span> years past predicted solar decomposition, the Planetary Regiment will contacted</p>
   <a href="./index.html">

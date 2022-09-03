@@ -11,17 +11,77 @@ body {
 
 h1 {
   text-align: center;
-  color: green;
-  font-size: 90px;
+  color: rgb(3, 161, 3);
+  font-size: 100px;
+  margin-bottom: 40px;
   font-family: 'Syne Mono', monospace;
 }
 
-h2 {
+.prompt {
+  margin-left: 37%;
+  border: solid white;
+  border-radius: 20px;
+  background-color: black;
+  margin-bottom: 50px;
+}
+
+.wrapper {
   text-align: center;
-  color: green;
-  margin-bottom: 100px;
+  background-color: black;
+}
+
+.wrapper .static-txts {
+  color: rgb(3, 161, 3);
+  font-family: 'Syne Mono', monospace;
+  font-size: 80px;
+}
+
+.wrapper .dynamic-txts {
+  margin-left: 15px;
+  height: 100px;
+  line-height: 100px;
+  overflow: hidden
+}
+
+.dynamic-txts li{
+  list-style: none;
+  color: white;
   font-size: 80px;
   font-family: 'Syne Mono', monospace;
+  position: relative;
+  top: 0;
+  animation: slide 8s steps(4) infinite;
+}
+@keyframes slide {
+  100%{
+    top: -400px;
+  }
+}
+
+.dynamic-txts li span {
+  position: relative;
+  margin: 5px 0;
+  line-height: 100px;
+
+}
+
+.dynamic-txts li span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  border-left: 7px solid white;
+  animation: typing 2s steps(7) infinite;
+}
+@keyframes typing {
+  40%, 60% {
+    left: calc(100%);
+  }
+  100%{
+    left: 0;
+  }
 }
 
 h3 {
@@ -33,12 +93,22 @@ h3 {
 }
 
 img {
-  height: 700px;
-  width: 700px;
-  border: solid green;
+  border: solid rgb(3, 161, 3);
   border-radius: 360px;
   border-width: 10px;
   display: block;
   margin-left: auto;
   margin-right: auto;
 } 
+
+.zoom {
+  background-color: green;
+  transition: transform .2s;
+  width: 700px;
+  height: 700px;
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  transform: scale(1.1);
+}

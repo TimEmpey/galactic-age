@@ -7,6 +7,7 @@ function handleForm1 (e) {
   e.preventDefault();
   document.getElementById("mercury-till").setAttribute("class", "hidden");
   document.getElementById("mercury-past").setAttribute("class", "hidden");
+  document.getElementById("result-housing").setAttribute("class", "hidden");
   let age1 = document.getElementById("mercury-age-input").value;
   let ageInput1 = new AgeInput(age1);
   ageInput1.findMercuryAge();
@@ -23,14 +24,17 @@ function handleForm1 (e) {
   if(outputTillMer !== undefined) {
     document.getElementById("mercury-till").removeAttribute("class");
     document.getElementById("mercury-age").removeAttribute("class");
+    document.getElementById("result-housing").removeAttribute("class", "hidden");
   } else if (outputPastMer !== undefined) {
     document.getElementById("mercury-past").removeAttribute("class");
     document.getElementById("mercury-age").removeAttribute("class");
+    document.getElementById("result-housing").removeAttribute("class", "hidden");
   }
 }
 function handleForm2 (e) {
   document.getElementById("venus-till").setAttribute("class", "hidden");
   document.getElementById("venus-past").setAttribute("class", "hidden");
+  document.getElementById("result-housing").setAttribute("class", "hidden");
   e.preventDefault();
   let age2 = document.getElementById("venus-age-input").value;
   let ageInput2 = new AgeInput(age2);
@@ -48,15 +52,18 @@ function handleForm2 (e) {
   if(outputTillVen !== undefined) {
     document.getElementById("venus-till").removeAttribute("class");
     document.getElementById("venus-age").removeAttribute("class");
+    document.getElementById("result-housing").removeAttribute("class", "hidden");
   } else if (outputPastVen !== undefined) {
     document.getElementById("venus-past").removeAttribute("class");
     document.getElementById("venus-age").removeAttribute("class");
+    document.getElementById("result-housing").removeAttribute("class", "hidden");
   }
 }
 function handleForm3 (e) {
   e.preventDefault();
   document.getElementById("mars-till").setAttribute("class", "hidden");
   document.getElementById("mars-past").setAttribute("class", "hidden");
+  document.getElementById("result-housing").setAttribute("class", "hidden");
   let age3 = document.getElementById("mars-age-input").value;
   let ageInput3 = new AgeInput(age3);
   ageInput3.findMarsAge();
@@ -73,15 +80,18 @@ function handleForm3 (e) {
   if(outputTillMar !== undefined) {
     document.getElementById("mars-till").removeAttribute("class");
     document.getElementById("mars-age").removeAttribute("class");
+    document.getElementById("result-housing").removeAttribute("class", "hidden");
   } else if (outputPastMar !== undefined) {
     document.getElementById("mars-past").removeAttribute("class");
     document.getElementById("mars-age").removeAttribute("class");
+    document.getElementById("result-housing").removeAttribute("class", "hidden");
   }
 }
 function handleForm4 (e) {
   e.preventDefault();
   document.getElementById("jupiter-till").setAttribute("class", "hidden");
   document.getElementById("jupiter-past").setAttribute("class", "hidden");
+  document.getElementById("result-housing").setAttribute("class", "hidden");
   let age4 = document.getElementById("jupiter-age-input").value;
   let ageInput4 = new AgeInput(age4);
   ageInput4.findJupiterAge();
@@ -98,9 +108,11 @@ function handleForm4 (e) {
   if(outputTillJup !== undefined) {
     document.getElementById("jupiter-till").removeAttribute("class");
     document.getElementById("jupiter-age").removeAttribute("class");
+    document.getElementById("result-housing").removeAttribute("class", "hidden");
   } else if (outputPastJup !== undefined) {
     document.getElementById("jupiter-past").removeAttribute("class");
     document.getElementById("jupiter-age").removeAttribute("class");
+    document.getElementById("result-housing").removeAttribute("class", "hidden");
   }
 }
 

@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
 
-/* .hidden {
+.hidden {
   display: none;
-} */
+}
 
 body {
   background-image: url("https://media.wired.com/photos/61dde9edf355cd4b7989ff3a/master/pass/Science_AUmicroscopii_eso1538c.jpg");
@@ -45,7 +45,7 @@ body {
 h1 {
   text-align: center;
   color: rgb(3, 161, 3);
-  font-size: 100px;
+  font-size: 80px;
   margin-bottom: 40px;
   font-family: 'Syne Mono', monospace;
 }
@@ -113,20 +113,20 @@ p {
 .wrapper .static-txts {
   color: rgb(3, 161, 3);
   font-family: 'Syne Mono', monospace;
-  font-size: 80px;
+  font-size: 60px;
 }
 
 .wrapper .dynamic-txts {
   margin-left: 15px;
-  height: 100px;
-  line-height: 100px;
+  height: 80px;
+  line-height: 80px;
   overflow: hidden
 }
 
 .dynamic-txts li{
   list-style: none;
   color: white;
-  font-size: 80px;
+  font-size: 60px;
   font-family: 'Syne Mono', monospace;
   position: relative;
   top: 0;
@@ -184,8 +184,8 @@ img {
 .zoom {
   background-color: green;
   transition: transform .2s;
-  width: 700px;
-  height: 700px;
+  width: 500px;
+  height: 500px;
   margin: 0 auto;
 }
 

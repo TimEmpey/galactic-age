@@ -9,12 +9,83 @@ body {
   margin-bottom: 300px;
 }
 
+.mercury-body {
+  background-image: url("https://dto9r5vaiz7bu.cloudfront.net/l7tgvl8ftfym6/source.jpg");
+}
+
+.venus-body {
+  background-image: url("https://cdn.mos.cms.futurecdn.net/teuYSaoqCLeEt2VCfmNC39.jpg");
+}
+
+.mars-body {
+  background-image: url("https://www.worldatlas.com/upload/bb/c3/32/shutterstock-1041249343.jpg");
+}
+
+.jupiter-body {
+  background-image: url("https://wallpaperaccess.com/full/223990.jpg");
+}
+
+.back-btn {
+  margin: 40px;
+  width: 200px;
+  height: 80px;
+  font-size: 40px;
+  font-family: 'Syne Mono', monospace;
+  border-radius: 30px;
+}
+
 h1 {
   text-align: center;
   color: rgb(3, 161, 3);
   font-size: 100px;
   margin-bottom: 40px;
   font-family: 'Syne Mono', monospace;
+}
+
+h2 {
+  text-align: center;
+  color: rgb(3, 161, 3);
+  font-size: 70px;
+  margin-bottom: 40px;
+  font-family: 'Syne Mono', monospace;
+}
+
+.age-form {
+  text-align: center;
+}
+
+label {
+  color: white;
+  font-size: 30px;
+  font-family: 'Syne Mono', monospace;
+}
+
+p {
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Syne Mono', monospace;
+}
+
+.output-number {
+  color: red;
+}
+
+.regiment {
+  color: rgb(3, 161, 3);
+}
+
+.warning {
+  color: red;
+}
+
+.result-output {
+  background-color: black;
+  width: 900px;
+  padding: 30px;
+  border: solid green 7px;
+  margin-left: 33%;
+  border-radius: 10%;
 }
 
 .prompt {
